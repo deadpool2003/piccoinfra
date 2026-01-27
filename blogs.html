@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picco Infra</title>
+    <link rel="icon" href="./Assets/Images/logo2.jpg" type="image/x-icon">
+    <meta name="description"
+        content="Picco Infra delivers creative interior design and construction solutions. We specialize in residential, office interiors, and renovation projects.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--Our CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="./index.html" class="logo d-flex align-items-center">
+                <img src="./Assets/Images/logo2.jpg" alt="logo" class="logo-img"
+                    style="width: 40px; margin-right: 7px;">
+                <span class="logo-text">PICCO <span class="accent">INFRA</span></span>
+            </a>
+
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="./index.html#home" class="nav-link active">Home</a></li>
+                    <li><a href="./index.html#about" class="nav-link">About Us</a></li>
+                    <li><a href="./index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="./index.html#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#" class="nav-link">Blogs</a></li>
+                    <li><a href="./index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu">
+            <button class="close-menu" aria-label="Close Navigation">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="./index.html#home" class="mobile-link">Home</a></li>
+                    <li><a href="./index.html#about" class="mobile-link">About Us</a></li>
+                    <li><a href="./index.html#services" class="mobile-link">Services</a></li>
+                    <li><a href="./index.html#projects" class="mobile-link">Projects</a></li>
+                    <li><a href="#" class="mobile-link">Blogs</a></li>
+                    <li><a href="./index.html#contact" class="mobile-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header"
+        style="background-image: linear-gradient(rgba(10, 35, 66, 0.8), rgba(10, 35, 66, 0.8)), url('./Assets/Images/blog.jpg');">
+        <div class="container text-center">
+            <h1 class="page-title">Our <span class="accent">Blog</span></h1>
+            <p class="page-subtitle">Insights and Trends in Interior Design & Construction</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section blog-section">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Article 1 -->
+                <article class="blog-card" data-animate="fade-up">
+                    <div class="blog-image">
+                        <img src="./Assets/Images/blog1.avif" alt="Office Interior Trends">
+                        <span class="blog-category">Office Interior</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar-alt"></i> Jan 24, 2026</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                        </div>
+                        <h3 class="blog-title"><a href="#">Trends in Office Interior Designing in Chennai</a></h3>
+                        <p class="blog-excerpt">Chennai, known for its rich cultural heritage and rapid industrial
+                            growth, is witnessing a transformation in its office spaces...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="blog-card" data-animate="fade-up" style="transition-delay: 0.1s;">
+                    <div class="blog-image">
+                        <img src="./Assets/Images/blog2.avif" alt="Modern Office Design">
+                        <span class="blog-category">Office Interior</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar-alt"></i> Jan 15, 2026</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                        </div>
+                        <h3 class="blog-title"><a href="#">Latest Trends in Office Interior Designing</a></h3>
+                        <p class="blog-excerpt">Office interior design has evolved significantly in recent years,
+                            with a shift towards creating environments that promote productivity...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="blog-card" data-animate="fade-up" style="transition-delay: 0.2s;">
+                    <div class="blog-image">
+                        <img src="./Assets/Images/blog3.avif" alt="Technology in Office">
+                        <span class="blog-category">Office Interior</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar-alt"></i> Jan 10, 2026</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                        </div>
+                        <h3 class="blog-title"><a href="#">Technology Integration in Modern Office Design</a></h3>
+                        <p class="blog-excerpt">The integration of technology in office design has become a
+                            fundamental aspect of creating efficient, productive, and flexible work...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container footer-grid">
+                <div class="footer-widget">
+                    <!-- <a href="#" class="footer-logo">PICCO <span class="accent">INFRA</span></a> -->
+                    <img src="./Assets/Images/logo.jpg" alt="logo" class="logo-img mb-3">
+                    <p>Delivering creative interior design solutions and superior construction services since 2019.
+                    </p>
+                </div>
+
+                <div class="footer-widget">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html#home">Home</a></li>
+                        <li><a href="./index.html#about">About We</a></li>
+                        <li><a href="./index.html#services">Services</a></li>
+                        <li><a href="./index.html#projects">Gallery</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="./index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h3>What We Do</h3>
+                    <ul>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Renovation</a></li>
+                        <li><a href="#">MEP Works</a></li>
+                        <li><a href="#">Construction</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Picco Infra Solutions Pvt Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

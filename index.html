@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picco Infra</title>
+    <link rel="icon" href="./Assets/Images/logo2.jpg" type="image/x-icon">
+    <meta name="description"
+        content="Picco Infra delivers creative interior design and construction solutions. We specialize in residential, office interiors, and renovation projects.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--Our CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo d-flex align-items-center">
+                <img src="./Assets/Images/logo2.jpg" alt="logo" class="logo-img"
+                    style="width: 40px; margin-right: 7px;">
+                <span class="logo-text">PICCO <span class="accent">INFRA</span></span>
+            </a>
+
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="./blogs.html" class="nav-link">Blogs</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu">
+            <button class="close-menu" aria-label="Close Navigation">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="mobile-link">Home</a></li>
+                    <li><a href="#about" class="mobile-link">About Us</a></li>
+                    <li><a href="#services" class="mobile-link">Services</a></li>
+                    <li><a href="#projects" class="mobile-link">Projects</a></li>
+                    <li><a href="./blogs.html" class="mobile-link">Blogs</a></li>
+                    <li><a href="#contact" class="mobile-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <div class="hero-text" data-animate="slide-up">
+                    <span class="hero-subtitle">Since 2019</span>
+                    <h1>Design. Build. <span class="gradient-text">Inspire.</span></h1>
+                    <p>Turning spaces into powerful expressions of personality. We deliver creative design solutions for
+                        residential and commercial environments.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                        <a href="#projects" class="btn btn-outline">View Our Work</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <!-- <a href="#about" class="scroll-down" aria-label="Scroll Down">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </a> -->
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="stats-section">
+            <div class="container stats-container">
+                <div class="stat-item" data-animate="fade-up">
+                    <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="stat-text">
+                        <span class="stat-number" data-target="2019">0</span>
+                        <span class="stat-label">Since</span>
+                    </div>
+                </div>
+                <div class="stat-item" data-animate="fade-up" style="transition-delay: 0.2s;">
+                    <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+                    <div class="stat-text">
+                        <span class="stat-head">Superior</span>
+                        <span class="stat-label">Materials</span>
+                    </div>
+                </div>
+                <div class="stat-item" data-animate="fade-up" style="transition-delay: 0.4s;">
+                    <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                    <div class="stat-text">
+                        <span class="stat-number" data-target="250">0</span><span class="plus">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+                <div class="stat-item" data-animate="fade-up" style="transition-delay: 0.6s;">
+                    <div class="stat-icon"><i class="fas fa-headset"></i></div>
+                    <div class="stat-text">
+                        <span class="stat-head">Lifelong</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header text-center" data-animate="fade-up">
+                    <h2 class="section-title">Who We <span class="accent">Are</span></h2>
+                    <div class="separator"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-content" data-animate="slide-right">
+                        <h3>Creating Authentic Design Solutions</h3>
+                        <p>Picco Team delivers creative interior design solutions from residential to office
+                            environments. We focus on conceptual interior design, renovation, and project management,
+                            striving to create quality work that balances function with aesthetics.</p>
+                        <p>We are known for our reliability and attention to detail. Whether it's a modest family home
+                            or a grand resort, we turn any space into a powerful expression of your personality.</p>
+
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Timeless Quality over Trends</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Collaborative Approach</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Functional & Beautiful Spaces</span>
+                            </div>
+                        </div>
+
+                        <a href="#contact" class="btn btn-primary">Get a Quote</a>
+                    </div>
+
+                    <div class="about-image" data-animate="slide-left">
+                        <div class="image-wrapper">
+                            <img src="./Assets/Images/about.avif" alt="Interior Design Team">
+                            <div class="experience-badge">
+                                <span class="years">7+</span>
+                                <span class="text">Years of Excellence</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section services-section bg-light">
+            <div class="container">
+                <div class="section-header text-center" data-animate="fade-up">
+                    <h2 class="section-title">What We <span class="accent">Do</span></h2>
+                    <p class="section-content">Picco Infra crafts refined infrastructure and interior solutions with a
+                        focus on precision, quality, and timeless design. From concept to completion, we create
+                        sophisticated spaces that balance functionality with elegance delivered with uncompromising
+                        standards and attention to detail.</p>
+
+                    <!-- <div class="row additional-services pt-3 gap-3 pb-0">
+                        <div class="d-flex gap-2 justify-content-center align-items-center">
+                            <i class="fa-solid fa-paper-plane fs-2"></i>
+                            <h3>Project Management</h3>
+                        </div>
+                        <div class="d-flex gap-2 justify-content-center align-items-center">
+                            <i class="fa-solid fa-chair fs-2"></i>
+                            <h3>Furniture Works</h3>
+                        </div>
+                        <div class="d-flex gap-2 justify-content-center align-items-center">
+                            <i class="fa-solid fa-paint-roller fs-2"></i>
+                            <h3>Soft Finishing</h3>
+                        </div>
+                        <div class="d-flex gap-2 justify-content-center align-items-center">
+                            <i class="fa-solid fa-screwdriver-wrench fs-2"></i>
+                            <h3>Renovation Works</h3>
+                        </div>
+                    </div> -->
+                    <div class="separator"></div>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Card 1 -->
+                    <div class="service-card d-flex align-items-center flex-column justify-content-between"
+                        data-animate="fade-up">
+                        <div>
+                            <div class="card-icon">
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                            <h3>Design & Consultant</h3>
+                            <p>Space planning, office interior design, and end-to-end project management.</p>
+                        </div>
+                        <ul class="service-list">
+                            <li>Space Planning</li>
+                            <li>Office Interiors</li>
+                            <li>Project Management</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="service-card d-flex align-items-center flex-column justify-content-between"
+                        data-animate="fade-up" style="transition-delay: 0.2s;">
+                        <div>
+                            <div class="card-icon">
+                                <i class="fas fa-paint-roller"></i>
+                            </div>
+                            <h3>Interior Finishing</h3>
+                            <p>Partition works, ceiling design, hacking, and precision tiling works.</p>
+                        </div>
+                        <ul class="service-list">
+                            <li>Partitions & Glass</li>
+                            <li>Ceiling Design</li>
+                            <li>Tiling Work</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="service-card d-flex align-items-center flex-column justify-content-between"
+                        data-animate="fade-up" style="transition-delay: 0.4s;">
+                        <div>
+                            <div class="card-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>MEP Works</h3>
+                            <p>Complete Mechanical, Electrical, and Plumbing solutions including HVAC.</p>
+                        </div>
+                        <ul class="service-list">
+                            <li>Mechanical & Electrical</li>
+                            <li>Fire Sprinkler Systems</li>
+                            <li>HVAC & Plumbing</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="service-card d-flex align-items-center flex-column justify-content-between"
+                        data-animate="fade-up" style="transition-delay: 0.6s;">
+                        <div>
+                            <div class="card-icon">
+                                <i class="fas fa-couch"></i>
+                            </div>
+                            <h3>Renovation & Décor</h3>
+                            <p>Full renovation services, custom furniture works, and soft finishing.</p>
+                        </div>
+                        <ul class="service-list">
+                            <li>Renovation Services</li>
+                            <li>Furniture Works</li>
+                            <li>Soft Finishing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Placeholder -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header text-center" data-animate="fade-up">
+                    <h2 class="section-title">Our <span class="accent">Projects</span></h2>
+                    <div class="separator"></div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-animate="fade-up">
+                        <div class="project-image">
+                            <img src="./Assets/Images/project1.avif" alt="Modern Villa">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h4>Modern Villa</h4>
+                                    <p>Residential</p>
+                                    <a href="#" class="view-project"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-animate="fade-up" style="transition-delay: 0.2s;">
+                        <div class="project-image">
+                            <img src="./Assets/Images/project2.avif" alt="Luxury Apartment">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h4>Luxury Apartment</h4>
+                                    <p>Interior Renovation</p>
+                                    <a href="#" class="view-project"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-animate="fade-up" style="transition-delay: 0.4s;">
+                        <div class="project-image">
+                            <img src="./Assets/Images/project3.webp" alt="Corporate Office">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h4>Tech Hub</h4>
+                                    <p>Office Design</p>
+                                    <a href="#" class="view-project"><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="#" class="btn btn-primary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="section testimonials-section bg-light">
+            <div class="container">
+                <div class="section-header text-center" data-animate="fade-up">
+                    <h2 class="section-title">Client <span class="accent">Stories</span></h2>
+                    <div class="separator"></div>
+                </div>
+
+                <div class="testimonial-slider-container" data-animate="fade-up">
+                    <button class="slider-btn prev-btn" aria-label="Previous Slide"><i
+                            class="fas fa-chevron-left"></i></button>
+
+                    <div class="testimonial-track-container">
+                        <div class="testimonial-track">
+                            <!-- Slide 1 -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-text">
+                                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                    <p class="testimonial-text">"We have awarded Picco Infra on many occasions…found
+                                        them conscientious and thorough in their work with attention to details."</p>
+                                </div>
+                                <div class="client-info">
+                                    <img src="./Assets/Images/User-300x300.png" alt="">
+                                    <div class="client-name">AFZAL SHAIK</div>
+                                    <div class="client-role">Divisional Manager</div>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-text">
+                                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                    <p class="testimonial-text">"The quality of service and work was excellent…
+                                        coordination was on perfect from designing till execution."</p>
+                                </div>
+                                <div class="client-info">
+                                    <img src="./Assets/Images/User-300x300.png" alt="">
+                                    <div class="client-name">P SATHISH KUMAR</div>
+                                    <div class="client-role">Admin Manager</div>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-text">
+                                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                    <p class="testimonial-text">"Picco Infra exceeded our high standards…
+                                        professionalism and expertise in project management and interior finishing
+                                        resulted in outstanding outcomes."</p>
+                                </div>
+                                <div class="client-info">
+                                    <img src="./Assets/Images/User-300x300.png" alt="">
+                                    <div class="client-name">SATHISH</div>
+                                    <div class="client-role">Sr. Manager Planning (Eversendai)</div>
+                                </div>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-text">
+                                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                    <p class="testimonial-text">"Hassle-free professional expertise… timely completion…
+                                        completely satisfied experience… highly recommend."</p>
+                                </div>
+                                <div class="client-info">
+                                    <img src="./Assets/Images/User-300x300.png" alt="">
+                                    <div class="client-name">AMRISH</div>
+                                    <div class="client-role">Chennai Head</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="slider-btn next-btn" aria-label="Next Slide"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info" data-animate="slide-right">
+                        <h2>Let's Build Something <span class="accent">Great</span></h2>
+                        <p>Ready to start your project? Contact us for a consultation today.</p>
+
+                        <div class="info-item">
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Our Location</h4>
+                                <p>Kras Building, 103/2, Uthamar Gandhi Road,<br>Nungambakkam, Chennai, Tamil Nadu
+                                    600034</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p><a href="mailto:info@piccoinfra.in">info@piccoinfra.in</a></p>
+                                <p><a href="mailto:sales@piccoinfra.in">sales@piccoinfra.in</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper" data-animate="slide-left">
+                        <form class="contact-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section (Marquee) -->
+        <section id="clients" class="section clients-section">
+            <div class="container">
+                <div class="section-header text-center" data-animate="fade-up">
+                    <h2 class="section-title">Our Prestigious <span class="accent">Clients</span></h2>
+                    <div class="separator"></div>
+                </div>
+
+                <div class="marquee-container">
+                    <div class="marquee-content">
+                        <!-- Original Set -->
+                        <div class="client-logo">
+                            <img src="./Assets/Images/CBRE.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/Dedalus.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/Eversendai.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/FederalBank.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/Ginger.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/KrdsIndia.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/Mphasis.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/Novac.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/Olympia.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/pencil.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/Poclain.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/Virtusa.webp" alt="">
+                        </div>
+
+                        <!-- Duplicate Set for Seamless Loop -->
+                        <div class="client-logo">
+                            <img src="./Assets/Images/CBRE.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/Dedalus.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/Eversendai.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/FederalBank.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/Ginger.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/KrdsIndia.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/Mphasis.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/Novac.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/Olympia.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/pencil.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/Poclain.webp" alt="">
+                        </div>
+                        <div class="client-logo">
+                            <img src="./Assets/Images/Virtusa.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container footer-grid">
+                <div class="footer-widget">
+                    <!-- <a href="#" class="footer-logo">PICCO <span class="accent">INFRA</span></a> -->
+                    <img src="./Assets/Images/logo.jpg" alt="logo" class="logo-img mb-3">
+                    <p>Delivering creative interior design solutions and superior construction services since 2019.</p>
+                </div>
+
+                <div class="footer-widget">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About We</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Gallery</a></li>
+                        <li><a href="./blogs.html">Blogs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h3>What We Do</h3>
+                    <ul>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Renovation</a></li>
+                        <li><a href="#">MEP Works</a></li>
+                        <li><a href="#">Construction</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Picco Infra Solutions Pvt Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
