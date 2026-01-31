@@ -119,10 +119,18 @@ document.addEventListener('DOMContentLoaded', () => {
             track.style.transform = `translateX(calc(-${currentSlideIndex * 100}% - ${currentSlideIndex * 20}px))`;
         };
 
+        const updateCurrentSlide = (index) => {
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            slides[index].classList.add('active');
+        }
+
         if (nextButton) {
             nextButton.addEventListener('click', () => {
                 currentSlideIndex = (currentSlideIndex + 1) % slides.length;
                 updateSlidePosition();
+                updateCurrentSlide(currentSlideIndex);
             });
         }
 
@@ -130,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
             prevButton.addEventListener('click', () => {
                 currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
                 updateSlidePosition();
+                updateCurrentSlide(currentSlideIndex);
             });
         }
 
@@ -137,6 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setInterval(() => {
             currentSlideIndex = (currentSlideIndex + 1) % slides.length;
             updateSlidePosition();
+            updateCurrentSlide(currentSlideIndex);
         }, 5000);
     }
 });
